@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Styled Elements</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #eeeeee;
+        }
+
+        /* .taiji {
+            position: relative;
+        } */
+
+        .element1 {
+            width: 500px;
+            height: 500px;
+            background-color: #C6CDEA;
+            border-radius: 50%;
+        }
+
+        .child1 {
+            width: 400px;
+            ;
+            height: 400px;
+            border-radius: 50%;
+            background-color: #C6CDEA;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        .word {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(calc(var(--angle) * 1deg)) translateX(120px) rotate(calc(-1 * var(--angle) * 1deg));
+            --angle: 0;
+        }
+
+        .word:nth-child(1) {
+            --angle: 0;
+        }
+
+        .word:nth-child(2) {
+            --angle: 36;
+        }
+
+        .word:nth-child(3) {
+            --angle: 72;
+        }
+
+        .word:nth-child(4) {
+            --angle: 108;
+        }
+
+        .word:nth-child(5) {
+            --angle: 144;
+        }
+
+        .word:nth-child(6) {
+            --angle: 180;
+        }
+
+        .word:nth-child(7) {
+            --angle: 216;
+        }
+
+        .word:nth-child(8) {
+            --angle: 252;
+        }
+
+        .word:nth-child(9) {
+            --angle: 288;
+        }
+
+        .word:nth-child(10) {
+            --angle: 324;
+        }
+
+        .word2 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(calc(var(--angle) * 1deg)) translateX(170px) rotate(calc(-1 * var(--angle) * 1deg));
+            --angle: 0;
+        }
+
+        .word2:nth-child(1) {
+            --angle: 0;
+        }
+
+        .word2:nth-child(2) {
+            --angle: 36;
+        }
+
+        .word2:nth-child(3) {
+            --angle: 72;
+        }
+
+        .word2:nth-child(4) {
+            --angle: 108;
+        }
+
+        .word2:nth-child(5) {
+            --angle: 144;
+        }
+
+        .word2:nth-child(6) {
+            --angle: 180;
+        }
+
+        .word2:nth-child(7) {
+            --angle: 216;
+        }
+
+        .word2:nth-child(8) {
+            --angle: 252;
+        }
+
+        .word2:nth-child(9) {
+            --angle: 288;
+        }
+
+        .word2:nth-child(10) {
+            --angle: 324;
+        }
+
+
+        .word3 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(calc(var(--angle) * 1deg)) translateX(60px) rotate(calc(-1 * var(--angle) * 1deg));
+            --angle: 0;
+        }
+
+
+         
+
+            .word3:nth-child(1) {
+                --angle: 0;
+
+            }
+
+            .word3:nth-child(2) {
+                --angle: 90;
+                /* transform-origin: center;  */
+                /* transform: rotate(90deg); */
+                /* transform: rotate(90deg) translateX(-50%) */
+            }
+
+            .word3:nth-child(3) {
+                --angle: 180;
+            }
+
+            .word3:nth-child(4) {
+                --angle: 270;
+            }
+
+        
+
+        .word3:nth-child(2) {
+            --angle: 90;
+        }
+
+        .word3:nth-child(3) {
+            --angle: 180;
+        }
+
+        .word3:nth-child(4) {
+            --angle: 270;
+        }
+
+        .element2 {
+            width: 300px;
+            height: 300px;
+            background-color: #6975A2;
+            border-radius: 50%;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        .child2 {
+            width: 200px;
+            ;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #37436B;
+            position: relative;
+            top: 50px;
+            left: 50px;
+
+        }
+
+
+
+        /* 八卦图
+        .cover {
+            position: absolute;
+          
+            width: 100px;
+            height: 100px;
+            left: 50px;
+            top: 50px;
+            background-color: yellow;
+
+            pointer-events: none;
+        } */
+
+        #八卦 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            overflow: hidden;
+            animation: x 10s linear infinite;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+            background-color: yellow;
+            /* transform: translateY(-120px); */
+            bottom: 319px;
+            /* transform: translate(50px, 50px); */
+
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            background-color: rgba(255, 255, 0, 0.5);
+            /* Yellow with 50% opacity */
+            /* 新增偏移
+            transform: translate(-50%, -50%) translateX(-50px) translateY(-50px);
+            transform: translateY(-1000px); */
+
+        }
+
+        #八卦>div:first-child {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            background-color: #FDB25A;
+            /* color: yellow; */
+        }
+
+        #八卦>div:nth-child(2) {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            background-color: #FFFFFF;
+            /* color: yellow; */
+        }
+
+        #八卦>div:nth-child(3) {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            margin-left: -25px;
+            border-radius: 25px;
+            background-color: #FDB25A;
+        }
+
+        #八卦>div:nth-child(4) {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -25px;
+            border-radius: 25px;
+            background-color: #FFFFFF;
+        }
+
+        #八卦>div:nth-child(5) {
+            width: 12.5px;
+            height: 12.5px;
+            position: absolute;
+            left: 50%;
+            top: 25px;
+            margin-left: -12.5px;
+            border-radius: 6.25px;
+            background-color: white;
+        }
+
+        #八卦>div:nth-child(6) {
+            width: 12.5px;
+            height: 12.5px;
+            position: absolute;
+            left: 50%;
+            bottom: 25px;
+            margin-left: -12.5px;
+            border-radius: 6.25px;
+            background-color: black;
+        }
+
+        #八卦-wrapper {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #八卦-描述 {
+            margin-top: 1em;
+            font-size: 3em;
+        }
+
+        @keyframes x {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="taiji">
+        
+        <div class="child1">
+
+            <div class="element2">
+                <p class="word">1</p>
+                <p class="word">2</p>
+                <p class="word">3</p>
+                <p class="word">4</p>
+                <p class="word">5</p>
+                <p class="word">6</p>
+                <p class="word">7</p>
+                <p class="word">8</p>
+                <p class="word">9</p>
+                <p class="word">10</p>
+                <div class="child2">
+                    <p class="word3">根</p>
+                    <p class="word3">果</p>
+                    <p class="word3">苗</p>
+                    <p class="word3">花</p>
+
+
+                    <div id="八卦-wrapper">
+                        <div class="cover"></div>
+                        <div id="八卦">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id="八卦-描述"></div>
+                    </div>
+                </div>
+
+
+            </div>
+            <p class="word2">1</p>
+            <p class="word2">2</p>
+            <p class="word2">3</p>
+            <p class="word2">4</p>
+            <p class="word2">5</p>
+            <p class="word2">6</p>
+            <p class="word2">7</p>
+            <p class="word2">8</p>
+            <p class="word2">9</p>
+            <p class="word2">10</p>
+        </div>
+
+    </div>
+    <!-- </div> -->
+    </div>
+
+
+</body>
